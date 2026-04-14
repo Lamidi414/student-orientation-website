@@ -1115,3 +1115,41 @@ a:hover {
         font-size: 2rem;
     }
 }
+
+/* Grading Table */
+.grading-table {
+    border: 1px solid var(--naub-gray-light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.grade-row {
+    display: grid;
+    grid-template-columns: 80px 120px 80px 1fr;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--naub-gray-light);
+}
+
+.grade-row:last-child {
+    border-bottom: none;
+}
+
+.grade-row.header {
+    background: var(--naub-primary);
+    color: var(--naub-white);
+    font-weight: 600;
+}
+
+.grade-row span {
+    text-align: center;
+}
+
+.grade-row.header span {
+    text-align: center;
+}
+
+.grade-row span:first-child,
+.grade-row span:last-child {
+    text-align: left;
+}
