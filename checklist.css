@@ -1,0 +1,419 @@
+/* Checklist Page Styles */
+.checklist-hero {
+    background: linear-gradient(135deg, var(--naub-primary) 0%, var(--naub-primary-dark) 100%);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.checklist-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+}
+
+.checklist-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.checklist-hero h1 {
+    font-size: 2rem;
+    color: var(--naub-white);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.checklist-hero h1 .icon {
+    color: var(--naub-gold);
+}
+
+.checklist-hero p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+/* Progress Section */
+.progress-section {
+    background: var(--naub-white);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-top: -2rem;
+    position: relative;
+    z-index: 10;
+    box-shadow: var(--shadow-lg);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--naub-white);
+    background: linear-gradient(135deg, var(--naub-primary) 0%, var(--naub-primary-light) 100%);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.progress-circle::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: conic-gradient(var(--naub-gold) var(--progress, 0%), var(--naub-gray-light) 0%);
+    z-index: -1;
+}
+
+.progress-circle.completed {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.progress-info {
+    flex: 1;
+}
+
+.progress-info h2 {
+    font-size: 1.5rem;
+    color: var(--naub-primary);
+    margin-bottom: 0.25rem;
+}
+
+.progress-info p {
+    color: var(--naub-gray);
+    margin-bottom: 0.75rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--naub-gray-light);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.progress-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.progress-actions .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.progress-actions .btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.progress-actions .btn-outline {
+    border-color: var(--naub-gray);
+    color: var(--naub-gray);
+    background: transparent;
+}
+
+.progress-actions .btn-outline:hover {
+    background: var(--naub-gray);
+    color: white;
+}
+
+/* Checklist Content */
+.checklist-content {
+    padding: 3rem 0;
+}
+
+.sort-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.sort-controls label {
+    font-weight: 600;
+    color: var(--naub-gray-dark);
+}
+
+.sort-controls select {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--naub-gray-light);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    color: var(--naub-gray-dark);
+    background: var(--naub-white);
+    cursor: pointer;
+}
+
+.sort-controls select:focus {
+    outline: none;
+    border-color: var(--naub-primary);
+}
+
+/* Category Card */
+.category-card {
+    background: var(--naub-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+}
+
+.category-header {
+    background: linear-gradient(135deg, var(--naub-primary) 0%, var(--naub-primary-light) 100%);
+    color: var(--naub-white);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category-icon {
+    font-size: 1.5rem;
+    color: var(--naub-gold);
+}
+
+.category-header > div {
+    flex: 1;
+}
+
+.category-header h3 {
+    color: var(--naub-white);
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.category-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.category-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.category-body {
+    padding: 1rem 1.5rem;
+}
+
+/* Task Item */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: var(--naub-white);
+    border-radius: var(--radius-md);
+    margin-bottom: 0.75rem;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition);
+    border-left: 4px solid var(--naub-gray-light);
+    cursor: pointer;
+}
+
+.task-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(5px);
+}
+
+.task-item:last-child {
+    margin-bottom: 0;
+}
+
+.task-item.completed {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-left-color: #28a745;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+    color: var(--naub-gray);
+}
+
+.task-item.priority-high {
+    border-left-color: #dc3545;
+}
+
+.task-item.priority-medium {
+    border-left-color: #ffc107;
+}
+
+.task-item.priority-low {
+    border-left-color: #17a2b8;
+}
+
+.task-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--naub-primary);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    transition: all var(--transition);
+    background: var(--naub-white);
+    color: transparent;
+}
+
+.task-item.completed .task-checkbox {
+    background: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.task-info {
+    flex: 1;
+}
+
+.task-info h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--naub-primary);
+    margin-bottom: 0.25rem;
+}
+
+.task-info p {
+    font-size: 0.875rem;
+    color: var(--naub-gray);
+    margin-bottom: 0;
+}
+
+/* Priority Badge */
+.priority-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+.priority-badge.high {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.priority-badge.medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.priority-badge.low {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Animation */
+@keyframes taskComplete {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.task-item.just-completed {
+    animation: taskComplete 0.3s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .progress-section {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .progress-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .progress-actions {
+        justify-content: center;
+    }
+
+    .sort-controls {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .checklist-hero {
+        padding: 2rem 0;
+    }
+
+    .checklist-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .progress-section {
+        padding: 1rem;
+    }
+
+    .progress-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 1.25rem;
+    }
+
+    .category-header {
+        flex-wrap: wrap;
+    }
+
+    .category-badge {
+        margin-left: auto;
+        margin-top: 0.5rem;
+    }
+
+    .task-item {
+        flex-wrap: wrap;
+    }
+
+    .task-checkbox {
+        margin-bottom: 0.5rem;
+    }
+
+    .priority-badge {
+        margin-left: auto;
+        margin-top: 0.5rem;
+    }
+
+    .sort-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

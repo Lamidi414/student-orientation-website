@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NAUB FAQs - Frequently Asked Questions">
+    <title>FAQs | NAUB Orientation Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">NAUB</div>
+                <div class="logo-text">
+                    <span class="site-title">NAUB Orientation</span>
+                    <span class="site-subtitle">Nigerian Army University, Biu</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="checklist.html" class="nav-link">Checklist</a>
+                <a href="faq.html" class="nav-link active">FAQs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="support.html" class="nav-link">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="faq-hero">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about NAUB</p>
+                <div class="search-container">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <input type="text" id="faqSearch" placeholder="Search for answers...">
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="faq-content">
+            <div class="container">
+                <div class="faq-grid">
+                    <!-- Category Sidebar -->
+                    <aside class="category-sidebar">
+                        <h4>Categories</h4>
+                        <ul class="category-list">
+                            <li><button class="category-btn active" data-category="all">All Questions <span class="category-count">25</span></button></li>
+                            <li><button class="category-btn" data-category="Registration">Registration <span class="category-count">3</span></button></li>
+                            <li><button class="category-btn" data-category="Portal">Portal & Login <span class="category-count">2</span></button></li>
+                            <li><button class="category-btn" data-category="Documents">Documents <span class="category-count">3</span></button></li>
+                            <li><button class="category-btn" data-category="Hostel">Hostel <span class="category-count">3</span></button></li>
+                            <li><button class="category-btn" data-category="Health">Health <span class="category-count">2</span></button></li>
+                            <li><button class="category-btn" data-category="Academic">Academic <span class="category-count">4</span></button></li>
+                            <li><button class="category-btn" data-category="Activities">Student Activities <span class="category-count">2</span></button></li>
+                            <li><button class="category-btn" data-category="Facilities">Facilities <span class="category-count">2</span></button></li>
+                            <li><button class="category-btn" data-category="Financial">Financial <span class="category-count">2</span></button></li>
+                        </ul>
+                    </aside>
+
+                    <!-- FAQ Accordion -->
+                    <div class="faq-accordion">
+                        <!-- Registration FAQs -->
+                        <div class="faq-category">
+                            <h3 class="faq-category-title">Registration</h3>
+                            <div class="faq-item" data-category="Registration">
+                                <button class="faq-question">
+                                    <span class="category-badge">Registration</span>
+                                    <span>How do I complete my registration?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>To complete your registration, log in to the student portal using your matric number and password. Navigate to the Registration section, select your courses, and proceed to payment. After payment, generate your registration slip. Make sure to verify all details before submission.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Registration">
+                                <button class="faq-question">
+                                    <span class="category-badge">Registration</span>
+                                    <span>What is the deadline for course registration?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Course registration typically closes two weeks after the start of lectures. For the 2025/2026 session, the deadline is October 6, 2025. Late registration attracts a penalty fee.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Registration">
+                                <button class="faq-question">
+                                    <span class="category-badge">Registration</span>
+                                    <span>Can I change my courses after registration?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Course changes are allowed only during the add/drop period, which is the first two weeks of the semester. Log in to the student portal, navigate to Course Registration, and use the add/drop function. Note that some courses may have prerequisites or capacity limits.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Portal FAQs -->
+                        <div class="faq-category">
+                            <h3 class="faq-category-title">Portal & Login</h3>
+                            <div class="faq-item" data-category="Portal">
+                                <button class="faq-question">
+                                    <span class="category-badge">Portal</span>
+                                    <span>How do I reset my student portal password?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Visit the IT Help Desk located in the Library building or email support@naub.edu.ng with your matric number and a valid ID. You will receive a temporary password within 24 hours.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Portal">
+                                <button class="faq-question">
+                                    <span class="category-badge">Portal</span>
+                                    <span>What do I do if I cannot access my student portal?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>First, ensure you are using the correct URL (portal.naub.edu.ng). Clear your browser cache and cookies. If the problem persists, contact the IT Help Desk at +234 800 NAUB IT or visit the Library Building, First Floor.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Document FAQs -->
+                        <div class="faq-category">
+                            <h3 class="faq-category-title">Documents & Clearance</h3>
+                            <div class="faq-item" data-category="Documents">
+                                <button class="faq-question">
+                                    <span class="category-badge">Documents</span>
+                                    <span>Where can I get my student ID card?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Student ID cards are processed at the Registry Office in the Main Administrative Block. Bring your registration slip and passport photographs. Processing takes 3-5 working days.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Documents">
+                                <button class="faq-question">
+                                    <span class="category-badge">Documents</span>
+                                    <span>How do I get my transcript?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Submit a transcript request application at the Registry Office. The processing fee is applicable. Transcripts are usually ready within 5-7 working days. You can also request digital transcripts via email to registry@naub.edu.ng.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Documents">
+                                <button class="faq-question">
+                                    <span class="category-badge">Documents</span>
+                                    <span>What documents do I need for school clearance?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>You will need: (1) Valid student ID card, (2) Registration slip, (3) Payment receipts, (4) Medical certificate, and (5) Completed clearance form from your department. Visit the Registry for final clearance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hostel FAQs -->
+                        <div class="faq-category">
+                            <h3 class="faq-category-title">Hostel & Accommodation</h3>
+                            <div class="faq-item" data-category="Hostel">
+                                <button class="faq-question">
+                                    <span class="category-badge">Hostel</span>
+                                    <span>How do I apply for hostel accommodation?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Log in to the student portal, navigate to Hostel Application, fill in the required details, and submit. Accommodation is allocated on a first-come, first-served basis. Priority is given to fresh students and final year students.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Hostel">
+                                <button class="faq-question">
+                                    <span class="category-badge">Hostel</span>
+                                    <span>What documents do I need for hostel clearance?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>You need your student ID card, registration slip, hostel application form, and a medical certificate. Report to the Hostel Warden with these documents for room allocation.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item" data-category="Hostel">
+                                <button class="faq-question">
+                                    <span class="category-badge">Hostel</span>
+                                    <span>What is the hostel allocation process?</span>
+                                    <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="6 9 12 15 18 9"/>
+                                    </svg>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Hostel allocation is done electronically based on your application. Fresh students are given priority. Check your portal for allocation status. Once allocated, report to your allocated hostel within 48 hours for room assignment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                    </svg>
+                    <h4>No FAQs Found</h4>
+                    <p>Try adjusting your search terms or browse by category.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Can't Find Answer -->
+        <section class="cant-find-section">
+            <div class="container">
+                <div class="cant-find-box">
+                    <h3>Can't Find Your Answer?</h3>
+                    <p>If you couldn't find the answer to your question, please don't hesitate to reach out to our support team. We're here to help!</p>
+                    <div class="cant-find-buttons">
+                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="support.html" class="btn btn-outline">Support Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">NAUB</div>
+                        <div>
+                            <h4>NAUB Orientation Portal</h4>
+                            <p>Nigerian Army University, Biu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="checklist.html">Checklist</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NAUB Orientation Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

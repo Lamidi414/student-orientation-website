@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NAUB Orientation Checklist - Track your progress">
+    <title>Orientation Checklist | NAUB Orientation Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checklist.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">NAUB</div>
+                <div class="logo-text">
+                    <span class="site-title">NAUB Orientation</span>
+                    <span class="site-subtitle">Nigerian Army University, Biu</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="checklist.html" class="nav-link active">Checklist</a>
+                <a href="faq.html" class="nav-link">FAQs</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="support.html" class="nav-link">Support</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="checklist-hero">
+            <div class="container">
+                <h1><span class="icon">&#10003;</span> Orientation Checklist</h1>
+                <p>Track your progress through essential orientation tasks. Complete each item to ensure a smooth start at NAUB.</p>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+            <div class="container">
+                <div class="progress-content">
+                    <div class="progress-circle" id="progressCircle" style="--progress: 0%;">
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-info">
+                        <h2 id="taskCount">0 / 16</h2>
+                        <p>Tasks Completed</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressBar"></div>
+                        </div>
+                    </div>
+                    <div class="progress-actions">
+                        <button class="btn btn-success" id="markAllComplete">
+                            <span>&#10003;</span> Mark All Complete
+                        </button>
+                        <button class="btn btn-outline" id="resetChecklist">
+                            <span>&#8635;</span> Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="checklist-content">
+            <div class="container">
+                <!-- Sort Controls -->
+                <div class="sort-controls">
+                    <label for="sortSelect">
+                        Sort by:
+                    </label>
+                    <select id="sortSelect">
+                        <option value="default">Default Order</option>
+                        <option value="priority">Priority (High to Low)</option>
+                        <option value="priority-low">Priority (Low to High)</option>
+                        <option value="completed">Completed First</option>
+                        <option value="incomplete">Incomplete First</option>
+                    </select>
+                </div>
+
+                <!-- Checklist Categories -->
+                <div id="checklistContainer">
+                    <!-- Pre-Arrival Tasks -->
+                    <div class="category-wrapper" data-category="pre-arrival">
+                        <div class="category-card">
+                            <div class="category-header">
+                                <span class="category-icon">&#9992;</span>
+                                <div>
+                                    <h3>Pre-Arrival Tasks</h3>
+                                    <p>Complete before arriving on campus</p>
+                                </div>
+                                <span class="category-badge">
+                                    <span class="cat-completed">0</span> / 5
+                                </span>
+                            </div>
+                            <div class="category-body">
+                                <div class="task-item priority-high" data-id="1" data-priority="high" data-category="pre-arrival">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Complete Online Registration</h4>
+                                        <p>Register for courses on the student portal and generate your registration slip</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-high" data-id="2" data-priority="high" data-category="pre-arrival">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Pay Tuition Fees</h4>
+                                        <p>Pay your tuition and other fees through the designated bank or online payment portal</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-medium" data-id="3" data-priority="medium" data-category="pre-arrival">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Verify Bio-data</h4>
+                                        <p>Check and update your personal information on the student portal</p>
+                                    </div>
+                                    <span class="priority-badge medium">Medium</span>
+                                </div>
+                                <div class="task-item priority-medium" data-id="4" data-priority="medium" data-category="pre-arrival">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Apply for Hostel</h4>
+                                        <p>Submit your hostel application through the student portal if you require accommodation</p>
+                                    </div>
+                                    <span class="priority-badge medium">Medium</span>
+                                </div>
+                                <div class="task-item priority-medium" data-id="5" data-priority="medium" data-category="pre-arrival">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Set Up Email Account</h4>
+                                        <p>Activate your official NAUB email account for communication</p>
+                                    </div>
+                                    <span class="priority-badge medium">Medium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registration Tasks -->
+                    <div class="category-wrapper" data-category="registration">
+                        <div class="category-card">
+                            <div class="category-header">
+                                <span class="category-icon">&#10003;</span>
+                                <div>
+                                    <h3>Registration Tasks</h3>
+                                    <p>Complete during registration</p>
+                                </div>
+                                <span class="category-badge">
+                                    <span class="cat-completed">0</span> / 5
+                                </span>
+                            </div>
+                            <div class="category-body">
+                                <div class="task-item priority-high" data-id="6" data-priority="high" data-category="registration">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Obtain Student ID Card</h4>
+                                        <p>Visit the Registry to process your student identification card</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-high" data-id="7" data-priority="high" data-category="registration">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Submit Medical Certificate</h4>
+                                        <p>Complete your medical screening at the Health Center and obtain a certificate</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-high" data-id="8" data-priority="high" data-category="registration">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Obtain Departmental Clearance</h4>
+                                        <p>Complete clearance with your department and faculty</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-medium" data-id="9" data-priority="medium" data-category="registration">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Collect Course Materials</h4>
+                                        <p>Get your course textbooks and materials from the university bookstore</p>
+                                    </div>
+                                    <span class="priority-badge medium">Medium</span>
+                                </div>
+                                <div class="task-item priority-low" data-id="10" data-priority="low" data-category="registration">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Register for Library Card</h4>
+                                        <p>Get your library membership to access books and online resources</p>
+                                    </div>
+                                    <span class="priority-badge low">Low</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- First Week Tasks -->
+                    <div class="category-wrapper" data-category="first-week">
+                        <div class="category-card">
+                            <div class="category-header">
+                                <span class="category-icon">&#128197;</span>
+                                <div>
+                                    <h3>First Week Tasks</h3>
+                                    <p>Complete during your first week</p>
+                                </div>
+                                <span class="category-badge">
+                                    <span class="cat-completed">0</span> / 4
+                                </span>
+                            </div>
+                            <div class="category-body">
+                                <div class="task-item priority-high" data-id="11" data-priority="high" data-category="first-week">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Attend Orientation Program</h4>
+                                        <p>Participate in the mandatory new student orientation program</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-high" data-id="12" data-priority="high" data-category="first-week">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Attend First Lecture</h4>
+                                        <p>Meet your lecturers and collect course outlines</p>
+                                    </div>
+                                    <span class="priority-badge high">High</span>
+                                </div>
+                                <div class="task-item priority-medium" data-id="13" data-priority="medium" data-category="first-week">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Join WhatsApp Groups</h4>
+                                        <p>Connect with your classmates through class WhatsApp groups</p>
+                                    </div>
+                                    <span class="priority-badge medium">Medium</span>
+                                </div>
+                                <div class="task-item priority-low" data-id="14" data-priority="low" data-category="first-week">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Join Student Groups</h4>
+                                        <p>Explore and join clubs, societies, or organizations of interest</p>
+                                    </div>
+                                    <span class="priority-badge low">Low</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Setup -->
+                    <div class="category-wrapper" data-category="academic">
+                        <div class="category-card">
+                            <div class="category-header">
+                                <span class="category-icon">&#128218;</span>
+                                <div>
+                                    <h3>Academic Setup</h3>
+                                    <p>Set up for academic success</p>
+                                </div>
+                                <span class="category-badge">
+                                    <span class="cat-completed">0</span> / 2
+                                </span>
+                            </div>
+                            <div class="category-body">
+                                <div class="task-item priority-medium" data-id="15" data-priority="medium" data-category="academic">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Set Up Mobile Banking</h4>
+                                        <p>Activate mobile banking for easy fee payments and transactions</p>
+                                    </div>
+                                    <span class="priority-badge medium">Medium</span>
+                                </div>
+                                <div class="task-item priority-low" data-id="16" data-priority="low" data-category="academic">
+                                    <div class="task-checkbox">
+                                        <span>&#10003;</span>
+                                    </div>
+                                    <div class="task-info">
+                                        <h4>Know Emergency Contacts</h4>
+                                        <p>Save important emergency numbers on your phone</p>
+                                    </div>
+                                    <span class="priority-badge low">Low</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">NAUB</div>
+                        <div>
+                            <h4>NAUB Orientation Portal</h4>
+                            <p>Nigerian Army University, Biu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <a href="index.html">Home</a>
+                    <a href="faq.html">FAQs</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NAUB Orientation Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
