@@ -20,9 +20,15 @@ Get a visual overview of the NAUB Orientation Portal:
 
 ---
 
+<img src="./view-img/img12.png" alt="Admin Dashboard" style="width:100%;">
+
+**Admin Dashboard** - Mobile Responsiveness
+
 <img src="./view-img/img03.png" alt="Academic Guide" style="width:100%;">
 
 **Academic Guide** - Academic resources and guidelines
+
+---
 
 ---
 
