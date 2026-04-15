@@ -6,8 +6,8 @@ A comprehensive student orientation portal for the Nigerian Army University, Biu
 
 Get a visual overview of the NAUB Orientation Portal:
 
-| Preview | Description |
-|---------|-------------|
+| Preview | Description                         |
+|---------|-------------------------------------|
 | ![Homepage](./view-img/img01.png) | **Homepage** - Main landing page with university branding and navigation |
 | ![About Page](./view-img/img02.png) | **About Page** - Information about NAUB |
 | ![Academic Guide](./view-img/img03.png) | **Academic Guide** - Academic resources and guidelines |
