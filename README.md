@@ -6,19 +6,71 @@ A comprehensive student orientation portal for the Nigerian Army University, Biu
 
 Get a visual overview of the NAUB Orientation Portal:
 
-| Preview | Description                         |
-|---------|-------------------------------------|
-| ![Homepage](./view-img/img01.png) | **Homepage** - Main landing page with university branding and navigation |
-| ![About Page](./view-img/img02.png) | **About Page** - Information about NAUB |
-| ![Academic Guide](./view-img/img03.png) | **Academic Guide** - Academic resources and guidelines |
-| ![Campus Life](./view-img/img04.png) | **Campus Life** - Student activities and campus facilities |
-| ![Student Checklist](./view-img/img05.png) | **Student Checklist** - Pre-arrival tasks for new students |
-| ![FAQ Page](./view-img/img06.png) | **FAQ** - Frequently asked questions |
-| ![Fresh Student Guide](./view-img/img07.png) | **Fresh Student Guide** - Orientation guide for newcomers |
-| ![Registration Guide](./view-img/img08.png) | **Registration Guide** - Step-by-step registration process |
-| ![Rules & Regulations](./view-img/img09.png) | **Rules & Regulations** - University policies |
-| ![Support Services](./view-img/img10.png) | **Support Services** - Available student support |
-| ![Contact Page](./view-img/img11.png) | **Contact Page** - Get in touch with the university |
+---
+
+<img src="./view-img/img01.png" alt="Homepage" style="width:100%;">
+
+**Homepage** - Main landing page with university branding and navigation
+
+---
+
+<img src="./view-img/img02.png" alt="About Page" style="width:100%;">
+
+**About Page** - Information about NAUB
+
+---
+
+<img src="./view-img/img03.png" alt="Academic Guide" style="width:100%;">
+
+**Academic Guide** - Academic resources and guidelines
+
+---
+
+<img src="./view-img/img04.png" alt="Campus Life" style="width:100%;">
+
+**Campus Life** - Student activities and campus facilities
+
+---
+
+<img src="./view-img/img05.png" alt="Student Checklist" style="width:100%;">
+
+**Student Checklist** - Pre-arrival tasks for new students
+
+---
+
+<img src="./view-img/img06.png" alt="FAQ Page" style="width:100%;">
+
+**FAQ Page** - Frequently asked questions
+
+---
+
+<img src="./view-img/img07.png" alt="Fresh Student Guide" style="width:100%;">
+
+**Fresh Student Guide** - Orientation guide for newcomers
+
+---
+
+<img src="./view-img/img08.png" alt="Registration Guide" style="width:100%;">
+
+**Registration Guide** - Step-by-step registration process
+
+---
+
+<img src="./view-img/img09.png" alt="Rules & Regulations" style="width:100%;">
+
+**Rules & Regulations** - University policies
+
+---
+
+<img src="./view-img/img10.png" alt="Support Services" style="width:100%;">
+
+**Support Services** - Available student support
+
+---
+
+<img src="./view-img/img11.png" alt="Contact Page" style="width:100%;">
+
+**Contact Page** - Get in touch with the university
 
 ## Table of Contents
 
