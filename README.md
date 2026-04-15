@@ -2,6 +2,24 @@
 
 A comprehensive student orientation portal for the Nigerian Army University, Biu (NAUB). This web application provides new students with essential information about university life, academic resources, campus facilities, and support services.
 
+## Project Preview
+
+Get a visual overview of the NAUB Orientation Portal:
+
+| Preview | Description |
+|---------|-------------|
+| ![Homepage](./view-img/img01.png) | **Homepage** - Main landing page with university branding and navigation |
+| ![About Page](./view-img/img02.png) | **About Page** - Information about NAUB |
+| ![Academic Guide](./view-img/img03.png) | **Academic Guide** - Academic resources and guidelines |
+| ![Campus Life](./view-img/img04.png) | **Campus Life** - Student activities and campus facilities |
+| ![Student Checklist](./view-img/img05.png) | **Student Checklist** - Pre-arrival tasks for new students |
+| ![FAQ Page](./view-img/img06.png) | **FAQ** - Frequently asked questions |
+| ![Fresh Student Guide](./view-img/img07.png) | **Fresh Student Guide** - Orientation guide for newcomers |
+| ![Registration Guide](./view-img/img08.png) | **Registration Guide** - Step-by-step registration process |
+| ![Rules & Regulations](./view-img/img09.png) | **Rules & Regulations** - University policies |
+| ![Support Services](./view-img/img10.png) | **Support Services** - Available student support |
+| ![Contact Page](./view-img/img11.png) | **Contact Page** - Get in touch with the university |
+
 ## Table of Contents
 
 - [Requirements](#requirements)
@@ -83,7 +101,7 @@ Follow these step-by-step instructions to set up the NAUB Orientation Website on
 
 If you don't have a web server set up, XAMPP is the easiest way to get started:
 
-1. Download XAMPP from [apachefriends.org](https://www.apachefriends.org/)
+1. Download XAMPP from [apachefriends.org](https://apachefriends.org/)
 2. Run the installer and follow the prompts
 3. Start Apache and MySQL from the XAMPP Control Panel
 4. Place the project files in `C:\xampp\htdocs\naub-orientation\`
@@ -307,6 +325,8 @@ naub-orientation/
 ├── js/                       # JavaScript files
 │   └── main.js              # Main JavaScript
 │
+├── view-img/                 # Project preview screenshots
+│
 ├── database.sql             # Database schema and seed data
 ├── index.php                # Homepage
 ├── about.php                # About page
@@ -331,6 +351,7 @@ naub-orientation/
 | [`admin/login.php`](admin/login.php) | Admin authentication |
 | [`admin/index.php`](admin/index.php) | Admin dashboard |
 | [`database.sql`](database.sql) | Complete database schema with sample data |
+| [`view-img/`](view-img/) | Project screenshots and preview images |
 
 ---
 
